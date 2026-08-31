@@ -7,6 +7,8 @@
     @vite('resources/css/app.css')
 </head>
 <body>
+
+    @include('layouts.nav')
     <div class="container mx-auto px-4 py-8">
         <!-- Header -->
         <div class="mb-12">
