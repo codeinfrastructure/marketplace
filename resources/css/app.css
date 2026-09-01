@@ -7,3 +7,15 @@
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
 }
+
+.text-3xl {
+    color: aliceblue;
+}
+
+.mb-8 {
+    padding-top: 25px;
+}
+
+.text-2xl {
+    
+}

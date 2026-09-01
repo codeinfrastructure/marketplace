@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    font-family: Arial, sans-serif;
+}
+
+
+
+.login-container {
+    width: 350px;
+    padding: 35px;
+
+    background: #222;
+    border-radius: 12px;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+}
+
+
+
+
+
+
+.login-title {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.login-title h1 {
+    margin: 0;
+    color: white;
+}
+
+form div {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    color: white;
+}
+
+input {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 10px;
+
+    border: none;
+    border-radius: 6px;
+
+    background: #333;
+    color: white;
+}
+
+input:focus {
+    outline: 2px solid #555;
+}
+
+
+.button-login {
+    width: 100%;
+    box-sizing: border-box;
+
+    margin-top: 10px;
+    padding: 10px;
+
+    border: none;
+    border-radius: 6px;
+
+    background: #333;
+    color: white;
+
+    cursor: pointer;
+
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+.button-login:hover {
+    background: #444;
+}
+
+.button-register {
+    display: block;
+
+    width: 100%;
+    box-sizing: border-box;
+
+    margin-top: 12px;
+    padding: 10px;
+
+    text-align: center;
+    text-decoration: none;
+
+    border-radius: 6px;
+
+    background: #333;
+    color: white;
+
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+
+
+.button-register:hover {
+    background: #444;
+}
+
+.error {
+    padding: 10px;
+    margin-bottom: 15px;
+
+    border-radius: 6px;
+
+    background: #442222;
+    color: #ffaaaa;
+}
+

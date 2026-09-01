@@ -6,7 +6,7 @@
     <title>Register - Marketplace</title>
     @vite('resources/css/app.css')
 </head>
-<body>
+<body style="background-image: url('{{ asset('images/login-wave.jpg') }}');">
     <!-- Include Navigation Bar -->
     @include('layouts.nav')
 
@@ -14,7 +14,7 @@
         <!-- Page Header -->
         <div class="text-center mb-8">
             <h1 class="text-3xl font-bold mb-2">Create Account</h1>
-            <p class="text-gray-600">Join our marketplace and start shopping</p>
+            <p class="text-gray-600"></p>
         </div>
 
         <!-- Registration Form -->
@@ -127,16 +127,9 @@
             <!-- Login Link -->
             <p class="text-center text-gray-600 mt-6">
                 Already have an account? 
-                <a href="#" class="text-blue-600 hover:text-blue-700 font-semibold">Login here</a>
+                <a href="/login" class="text-blue-600 hover:text-blue-700 font-semibold">Login here</a>
             </p>
         </div>
     </div>
-
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white mt-16 py-8">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <p>&copy; 2024 Marketplace. All rights reserved.</p>
-        </div>
-    </footer>
 </body>
 </html>
