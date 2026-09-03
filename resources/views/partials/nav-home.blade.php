@@ -13,12 +13,8 @@
                     Home
                 </a>
 
-                <a href="#" class="text-white hover:text-blue-400 transition">
+                <a href="{{ route('products') }}" class="text-white hover:text-blue-400 transition">
                     Products
-                </a>
-
-                <a href="#" class="text-white hover:text-blue-400 transition">
-                    Categories
                 </a>
 
                 <a href="{{ route('about') }}" class="text-white hover:text-blue-400 transition">

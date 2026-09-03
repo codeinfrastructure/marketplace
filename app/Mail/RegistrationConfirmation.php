@@ -30,7 +30,7 @@ class RegistrationConfirmation extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Welcome to Our Marketplace - Confirm Your Email',
+            subject: 'Welcome to Our Marketplace',
         );
     }
 

@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inloggen</title>
+    <title>Login</title>
 
     @vite('resources/css/login.css')
 </head>
 
-<body style="background-image: url('{{ asset('images/login-wave.jpg') }}');">
+<body style="background-image: url('{{ asset('images/login-place.png') }}');">
 
     <div class="login-container">
 
