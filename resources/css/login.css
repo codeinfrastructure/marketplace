@@ -130,3 +130,26 @@ input:focus {
     color: #ffaaaa;
 }
 
+
+.button-test {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px 0;
+
+    text-align: center;
+    text-decoration: none;
+
+    background-color: #555;
+    color: white;
+
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.button-test:hover {
+    background-color: #333;
+}

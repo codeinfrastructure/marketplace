@@ -33,6 +33,33 @@ Route::post('/login', [LoginController::class, 'authenticate'])
 
 
 // ========================================
+// TEST LOGIN
+// ========================================
+
+// Test login - ONLY available in local environment
+Route::get('/test-login', function () {
+
+    // Prevent this route from working in production
+    abort_unless(app()->environment('local'), 404);
+
+    // Get the first user from the database
+    $user = \App\Models\User::first();
+
+    // Make sure a user exists
+    if (!$user) {
+        abort(500, 'No users exist in the database.');
+    }
+
+    // Log the user in
+    Auth::login($user);
+
+    // Redirect to the marketplace/home page
+    return redirect()->route('home');
+
+})->name('test.login');
+
+
+// ========================================
 // REGISTER
 // ========================================
 
