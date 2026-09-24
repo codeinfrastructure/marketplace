@@ -1,35 +1,127 @@
 body {
     margin: 0;
+    padding: 0;
     min-height: 100vh;
-
+    font-family: Arial, sans-serif;
+    background-color: #111;
     display: flex;
     justify-content: center;
     align-items: center;
-
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    font-family: Arial, sans-serif;
 }
 
+.login-page-wrapper {
+    display: flex;
+    gap: 20px;
+}
 
+.login-left-panel {
+    position: relative;
+    width: 400px;
+    height: 450px;
+    padding: 70px;
+    box-sizing: border-box;
+    background: #1a1a1a;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 1.5s cubic-bezier(0.25, 1, 0.5, 1), width 1.5s cubic-bezier(0.25, 1, 0.5, 1), opacity 1.5s ease, padding 1.5s ease, margin 1.5s ease;
+    transform-origin: center center;
+}
+
+.login-left-panel.minimized {
+    width: 0px;
+    padding: 0px;
+    margin-right: -20px;
+    transform: scale(0);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.minimize-button {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #252525;
+    color: #888;
+    border: none;
+    padding: 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.minimize-button:hover {
+    background: #333;
+    color: white;
+}
+
+.maximize-button {
+    position: fixed;
+    left: 40px;
+    background: #1a1a1a;
+    color: #888;
+    border: 1px solid #333;
+    padding: 12px;
+    border-radius: 12px;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+    transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+    z-index: 10;
+}
+
+.maximize-button:hover {
+    background: #222;
+    color: white;
+    transform: scale(1.05);
+}
+
+.maximize-button.hidden {
+    display: none;
+}
+
+.left-panel-content {
+    text-align: center;
+    color: white;
+    transition: opacity 0.2s ease;
+}
+
+.login-left-panel.minimized .left-panel-content {
+    opacity: 0;
+}
+
+.left-panel-content h2 {
+    margin-top: 0;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.left-panel-content p {
+    color: #aaa;
+    font-size: 16px;
+    margin: 0;
+}
+
+.login-right-panel {
+    display: block;
+}
 
 .login-container {
-    width: 350px;
-    height: 700px;
-    padding: 35px;
-
+    width: 400px;
+    height: 450px;
+    padding: 70px;
+    box-sizing: border-box;
     background: #222;
     border-radius: 12px;
-
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
 }
-
-
-
-
-
 
 .login-title {
     text-align: center;
@@ -55,12 +147,9 @@ label {
 input {
     width: 100%;
     box-sizing: border-box;
-
     padding: 10px;
-
     border: none;
     border-radius: 6px;
-
     background: #333;
     color: white;
 }
@@ -69,22 +158,16 @@ input:focus {
     outline: 2px solid #555;
 }
 
-
 .button-login {
     width: 100%;
     box-sizing: border-box;
-
     margin-top: 10px;
     padding: 10px;
-
     border: none;
     border-radius: 6px;
-
     background: #333;
     color: white;
-
     cursor: pointer;
-
     font-family: Arial, sans-serif;
     font-size: 16px;
 }
@@ -95,26 +178,18 @@ input:focus {
 
 .button-register {
     display: block;
-
     width: 100%;
     box-sizing: border-box;
-
     margin-top: 12px;
     padding: 10px;
-
     text-align: center;
     text-decoration: none;
-
     border-radius: 6px;
-
     background: #333;
     color: white;
-
     font-family: Arial, sans-serif;
     font-size: 16px;
 }
-
-
 
 .button-register:hover {
     background: #444;
@@ -123,31 +198,25 @@ input:focus {
 .error {
     padding: 10px;
     margin-bottom: 15px;
-
     border-radius: 6px;
-
     background: #442222;
     color: #ffaaaa;
 }
-
 
 .button-test {
     display: block;
     width: 100%;
     margin-top: 10px;
     padding: 10px 0;
-
     text-align: center;
     text-decoration: none;
-
     background-color: #555;
     color: white;
-
     border: none;
     border-radius: 5px;
-
     cursor: pointer;
     box-sizing: border-box;
+    
 }
 
 .button-test:hover {
