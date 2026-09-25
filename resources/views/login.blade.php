@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 
     <title>Login</title>
 
@@ -34,8 +35,12 @@
             </button>
 
             <div class="left-panel-content">
-                <h2>Welkom bij Marketplace</h2>
-                <p>Ontdek het grootste platform voor al je products.</p>
+                
+              <button type="button" class="button-login">
+              <img src="{{ asset('images/about-us.png') }}" alt="About us" class="button-icon">
+              <span>About us</span>
+              </button>
+
             </div>
         </div>
 
@@ -44,9 +49,7 @@
 
             <div class="login-container">
 
-                <div class="login-title">
-                    <h1>Marketplace</h1>
-                </div>
+                <
 
                 @if ($errors->any())
                     <div class="error">
