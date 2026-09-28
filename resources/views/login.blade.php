@@ -36,10 +36,14 @@
 
             <div class="left-panel-content">
                 
-              <button type="button" class="button-login">
-              <img src="{{ asset('images/about-us.png') }}" alt="About us" class="button-icon">
-              <span>About us</span>
-              </button>
+              <a href="{{ route('about') }}" class="button-login">
+                <img src="{{ asset('images/about-us.png') }}" alt="About us" class="button-icon">
+                <span>About us</span>
+              </a>   
+
+              <a href="{{ route('Contact') }}" type="button" class="button-login">
+                 <span>Contact us</span>
+              </a>
 
             </div>
         </div>

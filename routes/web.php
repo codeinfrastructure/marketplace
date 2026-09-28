@@ -77,6 +77,11 @@ Route::post('/register', [AuthController::class, 'register'])
 // AUTHENTICATED ROUTES
 // ========================================
 
+Route::get('/about', function () {
+        return view('about');
+    })->name('about');
+
+
 Route::middleware('auth')->group(function () {
 
     // ========================================
@@ -124,9 +129,7 @@ Route::middleware('auth')->group(function () {
     // ABOUT
     // ========================================
 
-    Route::get('/about', function () {
-        return view('about');
-    })->name('about');
+    
 
 
     // ========================================
