@@ -17,7 +17,7 @@
         <div class="mb-8 flex justify-end">
             <form action="{{ route('search') }}" method="GET" class="flex gap-2">
 
-                <!-- Category Dropdown -->
+                
                 <select
                     name="category"
                     class="px-4 py-2 border rounded-lg bg-white"
