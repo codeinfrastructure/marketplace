@@ -42,10 +42,10 @@
               </a>   
 
               {{-- 
-<a href="{{ route('') }}" type="button" class="button-login">
-   <span>Contact us</span>
-</a> 
---}}
+              <a href="{{ route('') }}" type="button" class="button-login">
+               <span>Contact us</span>
+               </a> 
+             --}}
 
 
             </div>
