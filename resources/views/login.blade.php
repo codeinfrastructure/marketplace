@@ -56,7 +56,7 @@
 
             <div class="login-container">
 
-                <
+                
 
                 @if ($errors->any())
                     <div class="error">
@@ -91,12 +91,14 @@
                         >
                     </div>
 
-                    <button
-                        type="submit"
-                        class="button-login"
+                    <a 
+                    href="{{ route('login') }}"
+                    class="button-login"
+
                     >
+                        
                         login
-                    </button>
+                    </a>
 
                     <a
                         href="{{ route('register') }}"
